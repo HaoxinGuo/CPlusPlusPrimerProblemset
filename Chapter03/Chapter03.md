@@ -274,8 +274,11 @@ int?(*p)[3]?=?a;
 ```c++
 using?int_arr?=?int[4];?//?C++11
 typedef?int?int_arr[4];
-```
-
+```  
+**指针**  
+1. 指针本身的值（value）；
+2. 指针所指的对象（content）；
+3. 指针本身在内存中的储存位置（address）
 
 
 
