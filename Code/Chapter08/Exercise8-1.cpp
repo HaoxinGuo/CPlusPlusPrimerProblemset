@@ -1,5 +1,5 @@
 #include<iostream>
-#inclue<stdexcept>
+#include<stdexcept>
 using namespace std;
 istream& read(istream& is){
 	int i;

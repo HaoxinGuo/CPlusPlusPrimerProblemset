@@ -5,12 +5,12 @@
 #include<cstdlib>
 using namespace std;
 
-void print(vector<int> Vint,int index){
-	unsigned sz = Vint.size();
+void print(vector<int> Vint,unsigned int index){
+	unsigned int sz = Vint.size();
 	#ifndef NDEBUG
 	cout<<"vector的大小是："<<sz<<endl;
 	#endif
-	if(!Vint.empty() && index<sz){
+	if(!Vint.empty() && index < sz){
 		cout<<Vint[index]<<" ";
 		print(Vint,index+1);
 	}
@@ -27,6 +27,6 @@ int main(){
 	}
 	cout<<endl;
 	cout<<"----------------------------"<<endl;
-	print(Vint,0);
+	print(Vint,unsigned int a = 0);
 	return 0;
 }

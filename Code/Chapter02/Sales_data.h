@@ -56,7 +56,7 @@ Sales_data&  Sales_data::operator += (const Sales_data& rhs) {
 }
 
 ostream& operator <<(ostream& out,Sales_data& book){
-	out << book.bookNo<<" "<<book.units_sold<<" "<<book.sellingprice<<" "<<book.saleprice<<endl;
+	out << book.isbn()<<" "<<book.units_sold<<" "<<book.sellingprice<<" "<<book.saleprice<<endl;
 	return out;
 }
 istream& operator >> (istream& in, Sales_data& book) {

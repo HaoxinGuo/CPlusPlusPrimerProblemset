@@ -1,4 +1,4 @@
-// C++primer课后练习题练习 2.21
+// C++primer课后练习题练习 2.41
 // p1 *p1 的区别
 #include"Sales_data.h"
 //using namespace std;
@@ -12,8 +12,8 @@ int main() {
 	cout<<"plese enter the bookNo is equal"<<endl;
 	cin>>trans1>>trans2;
 	if(compareIsbn(trans1,trans2))
-		cout<<"Isbn units_sold saleprice sellingprice discount " 
-		<< trans1+trans2 <<endl;
+		cout<<"Isbn units_sold saleprice sellingprice discount" <<(trans1 += trans2) <<endl;
+		//cout<<"a"<<endl;
 	else
 		cout<<"the bookNo is different"<<endl;
 	Sales_data total,trans;
