@@ -3,20 +3,11 @@
 # 提交代码到github
 
 clear_build() {
-	for d in ./ch*; do
+	for d in ./Chapter*; do
 		cd $d
 			if [ -f build.sh ]; then
 				sh build.sh clear
 			fi
-
-			for example_d in ./example*
-			do
-				if [ -d $example_d ]; then
-					cd $example_d
-					make clean
-					cd ..
-				fi
-			done
 		cd ..
 	done
 
@@ -36,6 +27,7 @@ show_status() {
 }
 
 commit() {
+	git status
 	git add .
 	git commit -m "commit"
 
@@ -44,7 +36,6 @@ commit() {
 }
 
 main() {
-	rm -rf site
 
 	if [ "$1" = "gen" ]; then
 		clear_build
