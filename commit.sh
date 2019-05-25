@@ -24,7 +24,7 @@ show_status() {
 commit() {
 	git status
 	git add .
-	git commit -m keycommit
+	git commit -m $keycommit
 
 	echo "Committing ..."
 	git push origin master
