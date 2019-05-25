@@ -11,14 +11,14 @@ deque支持快速随机访问，在deque的中间位置插入或删除元素的�
 forward_1ist和array是新C++标准增加的类型。与内置数组相比，array是一种更安全、更容易使用的数组类型。与内置数组类似，array对象的大小是固定的。因此，array不支持添加和删除元素以及改变容器大小的操作。forward_list的设计目标是达到与最好的手写的单向链表数据结构相当的性能。因此，forward_list 没有size操作，因为保存或计算其大小就会比手写链表多出额外的开销。对其他容器而言，size保证是一个快速的常量时间的操作。  
 **确定使用哪种容器**  
 	通常，使用vector是最好的选择，除非你有很好的理由选择其他容器。  
-## 容器库概述
-**对容器可以保存的元素类型的限制**
+## 容器库概览
+**对容器可以保存的元素类型的限制**  
 顺序容器几乎可以保存任意类型的元素。  
 ### 迭代器  
 迭代器有着公共的接口：如果一个迭代器提供某个操作，那么所有提供相同操作的迭代器对这个操作的实现方式都是相同的。比如解引用操作。  
 表3.6（96页）列出了容器迭代器支持的所有操作。表3.7（99页）列出了迭代器支持的算术运算，这些运算只能应用于string、vector、deque和array。  
 **迭代器范围**  
-迭代器范围由一对迭代器表示，通常被称为begin和end，它们标记了容器中元素的一个范围。这个范围被称为左闭合区间：[begin, end)  
+迭代器范围由一对迭代器表示，通常被称为begin和end，它们标记了容器中元素的一个范围。这个范围被称为左闭合区间：`[begin, end)`  
 **使用左闭合区间蕴含的编程假定**  
 假定begin和end构成一个合法的迭代器范围，则：  
 - 如果begin与end相等，则范围为空  
@@ -30,8 +30,39 @@ forward_1ist和array是新C++标准增加的类型。与内置数组相比，arr
 方法有两种：  
 - 直接拷贝整个容器，两个容器的类型和元素的类型都必须匹配。  
 - 拷贝一个迭代器范围，容器类型不一定匹配，且元素类型只要能够转换即可。  
-### 赋值和拷贝  
-赋值运算符将其左边容器中的全部元素替换为右边容器中的元素的拷贝。
+```c++
+//每个容器有三个元素，用给定的初始化器进行初始化
+list<string> authors={"Milton"，"Shakespeare"，"Austen"};
+vector<const char*> articles={"a"，"an"，"the"};
+1ist<string>1ist2(authors);//正确：类型匹配
+deque<string>authList(authors);//错误：容器类型不匹配
+vector<string>words(articles);//错误：容器类型必须匹配
+//正确：可以将const char*元素转换为
+string forward_list<string> words(articles.begin()，articles.end());
+```
+**列表初始化**  
+```c++
+list<const char *> articles = {"a","an","the"};
+```
+**标准库array具有固定大小**  
+为了使用array类型，我们必须同时指定元素类型和大小，
+```c++
+array<int,10>::size_type i;//数组类型包括元素类型和大小；
+```
+### 赋值和swap  
+赋值运算符将其左边容器中的全部元素替换为右边容器中的元素的拷贝。  
+```c++
+c1 = c2;
+ca = {a,b,c};
+```
+与内置数组不同，标准库array类型允许赋值。赋值号左右两边的运算对象必须具有相同的类型：  
+```c++
+array<int，10>al={0，1，2，3，4，5，6，7，8，9};
+array<int，10>a2={0};//所有元素值均为0
+al=a2;//替换a1中的元素
+a2={0};//错误：不能将一个花括号列表赋予数组
+```
+**由于右边运算对象的大小可能与左边运算对象的大小不同，因此array类型不支持asign，也不允许用花括号包围的值列表进行赋值。**  
 **使用assign(仅顺序容器)**    
 赋值运算要求两边容器类型和元素类型相同。顺序容器（除了array）还定义了一个名为assign的成员，允许从一个相容的序列中赋值。  
 **使用swap**  
@@ -47,24 +78,63 @@ forward_1ist和array是新C++标准增加的类型。与内置数组相比，arr
 比较两个容器实际上是进行元素的逐对比较。  
 	只有当元素类型定义了相应的比较运算符时，才可以使用关系运算符比较两个容器。  
 ## 顺序容器操作
-顺序容器和关联容器的不同之处在于两者组织元素的方式。这些不同之处直接关系到了元素如何存储、访问、添加及删除。
+顺序容器和关联容器的不同之处在于两者组织元素的方式。这些不同之处直接关系到了元素如何存储、访问、添加及删除。  
 ### 向顺序容器添加元素
 标准库容器提供了灵活的内存管理。在运行时可以动态添加或删除元素来改变容器大小。表9.5，p305。
+```c++
+这些操作会改变容器的大小；array不支持这些操作。
+forward_list有自己专有版本的insert和emplace；参见9.3.4节（第312页）。
+forward_1ist不支持 push_back和emplace_back。
+vector和string不支持push front和emplace front。
+c. push back(t);
+c. emplace back(args);
+c. push_front(t);
+c. emplace_front(args);
+c. insert(p,t);
+c. emplace(p, args);
+c. insert(p,n,t)c. insert(p,b,e);
+c. insert(p, il);
+```
 	向一个deque、string或vector插入元素会使所有指向容器的迭代器、引用和指针失效。  
 	将元素插入到deque、string或vector中的任何位置都是合法的。然而，这样做可能很耗时。  
 **关键概念：容器元素是拷贝**  
 当我们用一个对象来初始化容器时，或将一个对象插入到容器中时，实际上放入到容器中的是对象值的一个拷贝。  
-### 访问元素
+### 访问元素  
 表9.6（p310）列出了我们可以用来在顺序容器中访问元素的操作。如果容器中没有元素，访问操作的结果是未定义的。  
+**访问成员函数返回的是引用**
+在容器中访问元素的成员函数(即，front、back、下标和at)返回的都是引用。
+如果容器是一个const对象，则返回值是const的引用。如果容器不是const的，则返回值是普通引用，我们可以用来改变元素的值：
+```c++
+if(！c.empty()){
+C.front()=42;//将42赋予c中的第一个元素
+auto&v=c.back();//获得指向最后一个元素的引用
+v=1024;//改变c中的元素
+auto v2=c.back();//v2不是一个引用，它是c.back()的一个拷贝
+v2=0;//未改变c中的元素
+```
 **下标操作和安全的随机访问**  
 提供快速随机访问的容器（string、vector、deque和array）也都提供下标运算符。保证下标合法是程序员的责任，编译器不检查越界错误。  
 如果想确保下标是合法的，可以使用at成员函数。at成员函数类似下标运算符，如果下标越界，at会抛出一个out_of_range异常。  
 ### 删除元素
 	删除deque中除首尾之外的任何元素都会使所有迭代器、引用、指针失效。指向vector或string中删除点之后位置的迭代器、引用和指针都会失效。  
 	删除元素之前，程序员必须确保它们是存在的。  
+```c++
+这些操作会改变容器的大小，所以不适用于array。
+forward list 有特殊版本的erase，参见9.3.4节（第312页）。
+forward_list 不支持 popback；vector和string不支持pop_front。
+c.pop_back()
+c.pop_front()
+c.erase(p)
+c.erase(b,e)
+c.clear()
+```  
 ### 改变容器大小
 可以使用resize来增大或缩小容器。如果当前大小大于所要求的大小，容器后部的元素会被删除；如果当前大小小于新大小，会将新元素添加到容器后部。  
 resize接受一个可选的元素指参数，用来初始化新添加的元素。如果未提供，新元素进行值初始化。  
+```c++
+c.resize(n);
+c.resize(n,t);
+```
 ### 容器操作可能使迭代器失效  
 使用失效的迭代器、引用、或指针是一种严重的错误。  
 向容器添加元素后：  
@@ -73,7 +143,16 @@ resize接受一个可选的元素指参数，用来初始化新添加的元素�
 当从容器中删除元素后：  
 - 对于list和forward_list，指向容器其他位置的迭代器仍有效。  
 - 对于string和vector，被删除元素之前的元素的迭代器仍有效。  
-## 额外的 string 操作
+## vector对象是如何增长的
+**管理容量的成员函数**  
+```c++
+//shrink to_fit 只适用于vector、string 和deque。
+//capacity和 reserve 只适用于vector和string。
+c.shrink_to_fit();//请将 capacity()减少为与size()相同大小
+c.capacity();//不重新分配内存空间的话，c可以保存多少元素
+C.reserve(n);//分配至少能容纳n个元素的内存空间
+```  
+## 额外的 string 操作  
 除了顺序容器共同的操作之外， string 类型还提供了一些额外的操作。  
 ### 构造 string 的其他方法  
 使用下面这些方法可以构造 string ：  
@@ -88,17 +167,43 @@ substr 返回一个 string ，它是原始 string 的一部分或全部的拷贝
 `s.substr(pos, n)` 返回一个 string ，包含s中从pos开始的n个字符的拷贝。pos默认为0,n默认为 s.size() - pos ，即拷贝从 pos 开始的所有字符。  
 ### 改变 string 的其他方法  
 string 类型支持顺序容器的赋值运算符以及 assign, insert, erase 操作。除此之外，它还定义了额外的 insert 和 erase 版本。即使用下标的版本。  
+```c++
+s.insert(s.size(),5,"!");//在s末尾插入五个！
+```
 这些函数都拥有许多重载的版本。  
-assign 版本还接受C风格字符串：  
-append 和 replace 是额外的成员函数， append 在 string 末尾进行插入操作， replace 替换内容，它是调用 erase 和 insert 的一种简写形式：
+assign 版本还接受C风格字符串：**需要以空格结尾**  
+append 和 replace 是额外的成员函数， append 在 string 末尾进行插入操作， replace 替换内容，它是调用 erase 和 insert 的一种简写形式：  
+```c++
+string s("C++ Primer 4th Ed.");
+//从位置11开始，删除三个字符并插入Fifth;
+s.replace(11,3,"Fifth)
+```
 ### string 搜索操作
 string 提供了6个搜索函数，它们都有4个重载版本。它们都返回一个 string::size_type 的值作为匹配位置（下标）。如果搜索失败，返回 string::npos ，其值为 -1 。  
 可以给函数一个搜索的起始位置 pos ，它默认值是0：
-`auto pos = s.find_first_of(numbers, pos);`
+`auto pos = s.find_first_of(numbers, pos);`  
+```c++
+string name("guohaoxin01236578");
+auto pos1 = name.find("guo");//pos1==0返回字符串guo第一次出现的位置
+numbers = "0123456789";
+auto pos2 = name.find_first_of(numbers);//寻找numbers字符串中任意字符出现的位置，find_first_not_of
+```
+**指定从哪里开始搜索**  
+```c++
+string size_type pos = 0;
+while((pos=name.find_first_of(numbers,pos))!=string::npos){
+	cout<<"found number at index:"<<pos<<" element is "<<name[pos]<<endl;
+	++pos;//移动到下一字符
+}
+```
 ### compare 函数  
 这是字符串比较函数，和C标准库的 strcmp 很相似。
 ### 数值转换  
 标准库提供了数值转换的函数。  
+```c++
+to_string(val)
+stoi/l/ul/ll/ull/f/d/ld//转换成int、double、float
+```
 如果 string 不能转换成一个数值，那么会抛出一个 invalid_argument 的异常。如果转换得到的数值无法用任何类型来表示，则抛出一个 out_of_range 异常。  
 ## 容器适配器
 三个容器适配器：stack(栈适配器),queue,priority_queue(队列适配器)。  
