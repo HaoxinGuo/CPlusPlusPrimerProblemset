@@ -24,7 +24,7 @@ show_status() {
 commit() {
 	git status
 	git add .
-	git commit -m "commit"
+	git commit -m keycommit
 
 	echo "Committing ..."
 	git push origin master
@@ -45,6 +45,8 @@ main() {
 	read answer
 
 	if [ "$answer" == "y" ]; then
+		echo -e "--------------------------\nPlease enter the commit key: \c"
+		read keycommit
 		commit
 	fi
 }
