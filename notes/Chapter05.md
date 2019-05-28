@@ -100,7 +100,7 @@ do
     statement
 while (condition);
 ```
-# 跳转语句  
+## 跳转语句  
 跳转语句中断当前的执行过程。C++语言提供了4种跳转语句：break, continue, goto和return。本章介绍前三种，return在第六章介绍（p199页）。  
 ## break语句
 break语句负责终止离它最近的while, do while, for或switch语句，并从这些语句之后的第一条语句开始执行。

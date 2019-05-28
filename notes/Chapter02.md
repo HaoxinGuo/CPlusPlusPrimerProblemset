@@ -1,4 +1,16 @@
-# 笔记
+---
+title: "C++ Notes"
+author: [GuoHaoxin]
+date: "2019-05-28"
+subject: "Markdown"
+keywords: [Markdown, Example]
+book: true
+classoption: [oneside]
+...
+
+
+
+
 # 第二章
 1. 'void*'
 是一种特殊的指针类，可以存放任意对象的地址。  
