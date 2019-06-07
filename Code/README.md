@@ -110,11 +110,21 @@
 
 |A|L|L|E|X|E|
 | :-: | :-: | :-: | :-: | :-: | :-: |
+|[练习12.1](Chapter12//Exercise_12_01.cpp "./Chapter12//Exercise_12_01.cpp")|[练习12.2](Chapter12//Exercise_12_02.md "./Chapter12//Exercise_12_02.md")|[练习12.3](Chapter12//Exercise_12_03.md "./Chapter12//Exercise_12_03.md")|[练习12.4](Chapter12//Exercise_12_04.md "./Chapter12//Exercise_12_04.md")|[练习12.5](Chapter12//Exercise_12_05.md "./Chapter12//Exercise_12_05.md")|[练习12.6](Chapter12//Exercise_12_06.cpp "./Chapter12//Exercise_12_06.cpp")|
+|[练习12.7](Chapter12//Exercise_12_07.cpp "./Chapter12//Exercise_12_07.cpp")|[练习12.8](Chapter12//Exercise_12_08.md "./Chapter12//Exercise_12_08.md")|[练习12.9](Chapter12//Exercise_12_09.md "./Chapter12//Exercise_12_09.md")|[练习12.10](Chapter12//Exercise_12_10.md "./Chapter12//Exercise_12_10.md")|[练习12.11](Chapter12//Exercise_12_11.md "./Chapter12//Exercise_12_11.md")|[练习12.12](Chapter12//Exercise_12_12.md "./Chapter12//Exercise_12_12.md")|
+|[练习12.13](Chapter12//Exercise_12_13.md "./Chapter12//Exercise_12_13.md")|[练习12.14](Chapter12//Exercise_12_14.cpp "./Chapter12//Exercise_12_14.cpp")|[练习12.15](Chapter12//Exercise_12_15.cpp "./Chapter12//Exercise_12_15.cpp")|[练习12.16](Chapter12//Exercise_12_16.cpp "./Chapter12//Exercise_12_16.cpp")|[练习12.17](Chapter12//Exercise_12_17.md "./Chapter12//Exercise_12_17.md")|[练习12.18](Chapter12//Exercise_12_18.md "./Chapter12//Exercise_12_18.md")|
+|[练习12.19/](Chapter12//Exercise_12_19/ "./Chapter12//Exercise_12_19/")|[练习12.19](Chapter12//Exercise_12_19.md "./Chapter12//Exercise_12_19.md")|[练习12.20/](Chapter12//Exercise_12_20/ "./Chapter12//Exercise_12_20/")|
 
 ## 第13章 拷贝控制
 
 |A|L|L|E|X|E|
 | :-: | :-: | :-: | :-: | :-: | :-: |
+|[练习13.1](Chapter13//Exercise_13_01.md "./Chapter13//Exercise_13_01.md")|[练习13.2](Chapter13//Exercise_13_02.md "./Chapter13//Exercise_13_02.md")|[练习13.3](Chapter13//Exercise_13_03.md "./Chapter13//Exercise_13_03.md")|[练习13.4](Chapter13//Exercise_13_04.md "./Chapter13//Exercise_13_04.md")|[练习13.5](Chapter13//Exercise_13_05.cpp "./Chapter13//Exercise_13_05.cpp")|[练习13.6](Chapter13//Exercise_13_06.md "./Chapter13//Exercise_13_06.md")|
+|[练习13.7](Chapter13//Exercise_13_07.md "./Chapter13//Exercise_13_07.md")|[练习13.8](Chapter13//Exercise_13_08.cpp "./Chapter13//Exercise_13_08.cpp")|[练习13.9](Chapter13//Exercise_13_09.md "./Chapter13//Exercise_13_09.md")|[练习13.10](Chapter13//Exercise_13_10.md "./Chapter13//Exercise_13_10.md")|[练习13.11](Chapter13//Exercise_13_11.cpp "./Chapter13//Exercise_13_11.cpp")|[练习13.12](Chapter13//Exercise_13_12.md "./Chapter13//Exercise_13_12.md")|
+|[练习13.13](Chapter13//Exercise_13_13.cpp "./Chapter13//Exercise_13_13.cpp")|[练习13.14](Chapter13//Exercise_13_14.md "./Chapter13//Exercise_13_14.md")|[练习13.15](Chapter13//Exercise_13_15.md "./Chapter13//Exercise_13_15.md")|[练习13.16](Chapter13//Exercise_13_16.md "./Chapter13//Exercise_13_16.md")|[练习13.17](Chapter13//Exercise_13_17.cpp "./Chapter13//Exercise_13_17.cpp")|[练习13.18](Chapter13//Exercise_13_18.cpp "./Chapter13//Exercise_13_18.cpp")|
+|[练习13.19](Chapter13//Exercise_13_19.cpp "./Chapter13//Exercise_13_19.cpp")|[练习13.20](Chapter13//Exercise_13_20.md "./Chapter13//Exercise_13_20.md")|[练习13.21](Chapter13//Exercise_13_21.md "./Chapter13//Exercise_13_21.md")|[练习13.22](Chapter13//Exercise_13_22.md "./Chapter13//Exercise_13_22.md")|[练习13.23](Chapter13//Exercise_13_23.md "./Chapter13//Exercise_13_23.md")|[练习13.24](Chapter13//Exercise_13_24.md "./Chapter13//Exercise_13_24.md")|
+|[练习13.25](Chapter13//Exercise_13_25.md "./Chapter13//Exercise_13_25.md")|[练习13.26](Chapter13//Exercise_13_26.cpp "./Chapter13//Exercise_13_26.cpp")|[练习13.27](Chapter13//Exercise_13_27.cpp "./Chapter13//Exercise_13_27.cpp")|[练习13.28](Chapter13//Exercise_13_28.cpp "./Chapter13//Exercise_13_28.cpp")|[练习13.29](Chapter13//Exercise_13_29.md "./Chapter13//Exercise_13_29.md")|[练习13.30](Chapter13//Exercise_13_30.cpp "./Chapter13//Exercise_13_30.cpp")|
+|[练习13.31](Chapter13//Exercise_13_31.cpp "./Chapter13//Exercise_13_31.cpp")|[练习13.31](Chapter13//Exercise_13_31.exe "./Chapter13//Exercise_13_31.exe")|[练习13.32](Chapter13//Exercise_13_32.md "./Chapter13//Exercise_13_32.md")|[练习13.33](Chapter13//Exercise_13_33.md "./Chapter13//Exercise_13_33.md")|
 
 ## 第14章 操作重载与类型转换
 
