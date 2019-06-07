@@ -263,6 +263,9 @@ __pycache__/
 
 
 
-
+*.aux
+*.pdf
+*.gz
+*.tex
 *.exe
 *.bat
