@@ -2,14 +2,6 @@
 
 学习环境：Windows 10
 
-以下内容需要更高的编译器版本支持：
-
-- 正则表达式库
-
-- 一些IO操纵符，比如hexfloat
-
-可以使用[在线编译器](http://coliru.stacked-crooked.com/)编译运行相关代码。
-
 ---
 
 ## 第1章 开始
@@ -124,7 +116,11 @@
 |[练习13.13](Chapter13//Exercise_13_13.cpp "./Chapter13//Exercise_13_13.cpp")|[练习13.14](Chapter13//Exercise_13_14.md "./Chapter13//Exercise_13_14.md")|[练习13.15](Chapter13//Exercise_13_15.md "./Chapter13//Exercise_13_15.md")|[练习13.16](Chapter13//Exercise_13_16.md "./Chapter13//Exercise_13_16.md")|[练习13.17](Chapter13//Exercise_13_17.cpp "./Chapter13//Exercise_13_17.cpp")|[练习13.18](Chapter13//Exercise_13_18.cpp "./Chapter13//Exercise_13_18.cpp")|
 |[练习13.19](Chapter13//Exercise_13_19.cpp "./Chapter13//Exercise_13_19.cpp")|[练习13.20](Chapter13//Exercise_13_20.md "./Chapter13//Exercise_13_20.md")|[练习13.21](Chapter13//Exercise_13_21.md "./Chapter13//Exercise_13_21.md")|[练习13.22](Chapter13//Exercise_13_22.md "./Chapter13//Exercise_13_22.md")|[练习13.23](Chapter13//Exercise_13_23.md "./Chapter13//Exercise_13_23.md")|[练习13.24](Chapter13//Exercise_13_24.md "./Chapter13//Exercise_13_24.md")|
 |[练习13.25](Chapter13//Exercise_13_25.md "./Chapter13//Exercise_13_25.md")|[练习13.26](Chapter13//Exercise_13_26.cpp "./Chapter13//Exercise_13_26.cpp")|[练习13.27](Chapter13//Exercise_13_27.cpp "./Chapter13//Exercise_13_27.cpp")|[练习13.28](Chapter13//Exercise_13_28.cpp "./Chapter13//Exercise_13_28.cpp")|[练习13.29](Chapter13//Exercise_13_29.md "./Chapter13//Exercise_13_29.md")|[练习13.30](Chapter13//Exercise_13_30.cpp "./Chapter13//Exercise_13_30.cpp")|
-|[练习13.31](Chapter13//Exercise_13_31.cpp "./Chapter13//Exercise_13_31.cpp")|[练习13.31](Chapter13//Exercise_13_31.exe "./Chapter13//Exercise_13_31.exe")|[练习13.32](Chapter13//Exercise_13_32.md "./Chapter13//Exercise_13_32.md")|[练习13.33](Chapter13//Exercise_13_33.md "./Chapter13//Exercise_13_33.md")|
+|[练习13.31](Chapter13//Exercise_13_31.cpp "./Chapter13//Exercise_13_31.cpp")|[练习13.31](Chapter13//Exercise_13_31.exe "./Chapter13//Exercise_13_31.exe")|[练习13.32](Chapter13//Exercise_13_32.md "./Chapter13//Exercise_13_32.md")|[练习13.33](Chapter13//Exercise_13_33.md "./Chapter13//Exercise_13_33.md")|[练习13.34](Chapter13//Exercise_13_34.md "./Chapter13//Exercise_13_34.md")|[练习13.35](Chapter13//Exercise_13_35.md "./Chapter13//Exercise_13_35.md")|
+|[练习13.36](Chapter13//Exercise_13_36.md "./Chapter13//Exercise_13_36.md")|[练习13.37](Chapter13//Exercise_13_37.md "./Chapter13//Exercise_13_37.md")|[练习13.38](Chapter13//Exercise_13_38.md "./Chapter13//Exercise_13_38.md")|[练习13.39](Chapter13//Exercise_13_39.md "./Chapter13//Exercise_13_39.md")|[练习13.40](Chapter13//Exercise_13_40.md "./Chapter13//Exercise_13_40.md")|[练习13.41](Chapter13//Exercise_13_41.md "./Chapter13//Exercise_13_41.md")|
+|[练习13.42](Chapter13//Exercise_13_42.md "./Chapter13//Exercise_13_42.md")|[练习13.43](Chapter13//Exercise_13_43.md "./Chapter13//Exercise_13_43.md")|[练习13.44](Chapter13//Exercise_13_44.md "./Chapter13//Exercise_13_44.md")|[练习13.45](Chapter13//Exercise_13_45.md "./Chapter13//Exercise_13_45.md")|[练习13.46](Chapter13//Exercise_13_46.md "./Chapter13//Exercise_13_46.md")|[练习13.47](Chapter13//Exercise_13_47.md "./Chapter13//Exercise_13_47.md")|
+|[练习13.48](Chapter13//Exercise_13_48.md "./Chapter13//Exercise_13_48.md")|[练习13.49](Chapter13//Exercise_13_49.md "./Chapter13//Exercise_13_49.md")|[练习13.50](Chapter13//Exercise_13_50.md "./Chapter13//Exercise_13_50.md")|[练习13.51](Chapter13//Exercise_13_51.md "./Chapter13//Exercise_13_51.md")|[练习13.52](Chapter13//Exercise_13_52.md "./Chapter13//Exercise_13_52.md")|[练习13.53](Chapter13//Exercise_13_53.cpp "./Chapter13//Exercise_13_53.cpp")|
+|[练习13.54](Chapter13//Exercise_13_54.md "./Chapter13//Exercise_13_54.md")|[练习13.55](Chapter13//Exercise_13_55.md "./Chapter13//Exercise_13_55.md")|[练习13.56](Chapter13//Exercise_13_56.md "./Chapter13//Exercise_13_56.md")|[练习13.57](Chapter13//Exercise_13_57.md "./Chapter13//Exercise_13_57.md")|[练习13.58](Chapter13//Exercise_13_58.cpp "./Chapter13//Exercise_13_58.cpp")|
 
 ## 第14章 操作重载与类型转换
 
