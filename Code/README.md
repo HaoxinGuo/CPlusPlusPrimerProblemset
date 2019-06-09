@@ -50,7 +50,8 @@
 
 |A|L|L|E|X|E|
 | :-: | :-: | :-: | :-: | :-: | :-: |
-|[练习7.Exercise7-07](Chapter07//Exercise7-07.cpp "./Chapter07//Exercise7-07.cpp")|[练习7.Exercise7-08](Chapter07//Exercise7-08.cpp "./Chapter07//Exercise7-08.cpp")|[练习7.Exercise7-2](Chapter07//Exercise7-2.h "./Chapter07//Exercise7-2.h")|[练习7.Exercise7-4](Chapter07//Exercise7-4.h "./Chapter07//Exercise7-4.h")|[练习7.Exercise7-43](Chapter07//Exercise7-43.cpp "./Chapter07//Exercise7-43.cpp")|
+|[练习7.40](Chapter07//Exercise_7_40.cpp "./Chapter07//Exercise_7_40.cpp")|[练习7.42](Chapter07//Exercise_7_42.cpp "./Chapter07//Exercise_7_42.cpp")|[练习7.Exercise7-07](Chapter07//Exercise7-07.cpp "./Chapter07//Exercise7-07.cpp")|[练习7.Exercise7-08](Chapter07//Exercise7-08.cpp "./Chapter07//Exercise7-08.cpp")|[练习7.Exercise7-2](Chapter07//Exercise7-2.h "./Chapter07//Exercise7-2.h")|[练习7.Exercise7-4](Chapter07//Exercise7-4.h "./Chapter07//Exercise7-4.h")|
+|[练习7.Exercise7-43](Chapter07//Exercise7-43.cpp "./Chapter07//Exercise7-43.cpp")|
 
 ## 第8章 IO库
 
@@ -126,6 +127,15 @@
 
 |A|L|L|E|X|E|
 | :-: | :-: | :-: | :-: | :-: | :-: |
+|[练习14.1](Chapter14//Exercise_14_01.md "./Chapter14//Exercise_14_01.md")|[练习14.2](Chapter14//Exercise_14_02.md "./Chapter14//Exercise_14_02.md")|[练习14.3](Chapter14//Exercise_14_03.md "./Chapter14//Exercise_14_03.md")|[练习14.4](Chapter14//Exercise_14_04.md "./Chapter14//Exercise_14_04.md")|[练习14.1](Chapter14//Exercise_14_05_1.cpp "./Chapter14//Exercise_14_05_1.cpp")|[练习14.2](Chapter14//Exercise_14_05_2.cpp "./Chapter14//Exercise_14_05_2.cpp")|
+|[练习14.6](Chapter14//Exercise_14_06.md "./Chapter14//Exercise_14_06.md")|[练习14.7](Chapter14//Exercise_14_07.md "./Chapter14//Exercise_14_07.md")|[练习14.8](Chapter14//Exercise_14_08.md "./Chapter14//Exercise_14_08.md")|[练习14.9](Chapter14//Exercise_14_09.md "./Chapter14//Exercise_14_09.md")|[练习14.10](Chapter14//Exercise_14_10.md "./Chapter14//Exercise_14_10.md")|[练习14.11](Chapter14//Exercise_14_11.md "./Chapter14//Exercise_14_11.md")|
+|[练习14.12](Chapter14//Exercise_14_12.md "./Chapter14//Exercise_14_12.md")|[练习14.13](Chapter14//Exercise_14_13.md "./Chapter14//Exercise_14_13.md")|[练习14.14](Chapter14//Exercise_14_14.md "./Chapter14//Exercise_14_14.md")|[练习14.15](Chapter14//Exercise_14_15.md "./Chapter14//Exercise_14_15.md")|[练习14.16](Chapter14//Exercise_14_16.md "./Chapter14//Exercise_14_16.md")|[练习14.17](Chapter14//Exercise_14_17.md "./Chapter14//Exercise_14_17.md")|
+|[练习14.18](Chapter14//Exercise_14_18.md "./Chapter14//Exercise_14_18.md")|[练习14.19](Chapter14//Exercise_14_19.md "./Chapter14//Exercise_14_19.md")|[练习14.20](Chapter14//Exercise_14_20.md "./Chapter14//Exercise_14_20.md")|[练习14.21](Chapter14//Exercise_14_21.md "./Chapter14//Exercise_14_21.md")|[练习14.22](Chapter14//Exercise_14_22.md "./Chapter14//Exercise_14_22.md")|[练习14.23](Chapter14//Exercise_14_23.md "./Chapter14//Exercise_14_23.md")|
+|[练习14.24](Chapter14//Exercise_14_24.cpp "./Chapter14//Exercise_14_24.cpp")|[练习14.25](Chapter14//Exercise_14_25.md "./Chapter14//Exercise_14_25.md")|[练习14.26](Chapter14//Exercise_14_26.md "./Chapter14//Exercise_14_26.md")|[练习14.27](Chapter14//Exercise_14_27.md "./Chapter14//Exercise_14_27.md")|[练习14.28](Chapter14//Exercise_14_28.md "./Chapter14//Exercise_14_28.md")|[练习14.29](Chapter14//Exercise_14_29.md "./Chapter14//Exercise_14_29.md")|
+|[练习14.30](Chapter14//Exercise_14_30.md "./Chapter14//Exercise_14_30.md")|[练习14.31](Chapter14//Exercise_14_31.md "./Chapter14//Exercise_14_31.md")|[练习14.32](Chapter14//Exercise_14_32.cpp "./Chapter14//Exercise_14_32.cpp")|[练习14.33](Chapter14//Exercise_14_33.md "./Chapter14//Exercise_14_33.md")|[练习14.34](Chapter14//Exercise_14_34.cpp "./Chapter14//Exercise_14_34.cpp")|[练习14.35](Chapter14//Exercise_14_35.cpp "./Chapter14//Exercise_14_35.cpp")|
+|[练习14.36](Chapter14//Exercise_14_36.cpp "./Chapter14//Exercise_14_36.cpp")|[练习14.37](Chapter14//Exercise_14_37.cpp "./Chapter14//Exercise_14_37.cpp")|[练习14.38](Chapter14//Exercise_14_38.cpp "./Chapter14//Exercise_14_38.cpp")|[练习14.39](Chapter14//Exercise_14_39.cpp "./Chapter14//Exercise_14_39.cpp")|[练习14.40](Chapter14//Exercise_14_40.cpp "./Chapter14//Exercise_14_40.cpp")|[练习14.41](Chapter14//Exercise_14_41.md "./Chapter14//Exercise_14_41.md")|
+|[练习14.42](Chapter14//Exercise_14_42.cpp "./Chapter14//Exercise_14_42.cpp")|[练习14.43](Chapter14//Exercise_14_43.cpp "./Chapter14//Exercise_14_43.cpp")|[练习14.44](Chapter14//Exercise_14_44.cpp "./Chapter14//Exercise_14_44.cpp")|[练习14.45](Chapter14//Exercise_14_45.md "./Chapter14//Exercise_14_45.md")|[练习14.46](Chapter14//Exercise_14_46.md "./Chapter14//Exercise_14_46.md")|[练习14.47](Chapter14//Exercise_14_47.md "./Chapter14//Exercise_14_47.md")|
+|[练习14.48](Chapter14//Exercise_14_48.md "./Chapter14//Exercise_14_48.md")|[练习14.49](Chapter14//Exercise_14_49.md "./Chapter14//Exercise_14_49.md")|[练习14.50](Chapter14//Exercise_14_50.cpp "./Chapter14//Exercise_14_50.cpp")|[练习14.51](Chapter14//Exercise_14_51.cpp "./Chapter14//Exercise_14_51.cpp")|[练习14.52](Chapter14//Exercise_14_52.md "./Chapter14//Exercise_14_52.md")|[练习14.53](Chapter14//Exercise_14_53.cpp "./Chapter14//Exercise_14_53.cpp")|
 
 ## 第15章 面向对象程序设计
 

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# 自动编译源文件的脚本，使用方法：sh build.sh [rebuild | clear]
+# 自动编译源文件的脚本，使用方法：sh build.sh
 
 all_cpp_files=`ls *.md`
 #pandoc $all_cpp_files -o example.pdf --from markdown --template eisvogel1 --latex-engine=xelatex -N --listings -V CJKmainfont='Microsoft YaHei' -V book --top-level-division=chapter
