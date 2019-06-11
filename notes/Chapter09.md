@@ -80,6 +80,7 @@ list<const char *> articles = {"a","an","the"};
 **标准库array具有固定大小**
 
 为了使用array类型，我们必须同时指定元素类型和大小，
+
 ```c++
 array<int,10>::size_type i;//数组类型包括元素类型和大小；
 ```
