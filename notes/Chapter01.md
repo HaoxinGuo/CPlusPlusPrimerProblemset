@@ -1,16 +1,18 @@
 ---
-title: "C++ Notes"
-author: [GuoHaoxin]
-date: "2019-05-28"
+title: "Vinaque sanguine metuenti cuiquam Alcyone fixus"
+author: [Author Name]
+date: "2017-02-20"
 subject: "Markdown"
 keywords: [Markdown, Example]
-book: true
-classoption: [oneside]
+subtitle: "Aesculeae domus vincemur et Veneris adsuetus lapsum"
+titlepage: true
+logo: "logo.pdf"
+logo-width: 120
 ...
 
 
 
-# 第一章 开始
+# 开始
 
 学习一门新的程序设计语言的最好方法就是练习编写程序。
 
